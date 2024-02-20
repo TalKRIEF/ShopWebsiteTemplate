@@ -1,0 +1,12 @@
+<div class="container d-flex align-items-center justify-content-center">
+  <div class="row">
+    <h1>Créer un évènement</h1>
+      <%= simple_form_for @post  do |f|%>
+        <%= f.input :title %>
+        <%= f.input :description %>
+        <%= f.input :price %>
+        <%= f.input :photo, as: :file %>
+        <%= f.button :submit, value: "Créer le post" %>
+      <% end %>
+  </div>
+</div>
